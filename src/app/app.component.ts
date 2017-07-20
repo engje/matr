@@ -19,29 +19,6 @@ import { AppState } from './app.service';
     './app.component.css'
   ],
   template: `
-    <nav>
-      <a [routerLink]=" ['./'] "
-        routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
-        Index
-      </a>
-      <a [routerLink]=" ['./home'] "
-        routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
-        Home
-      </a>
-      <a [routerLink]=" ['./ers'] "
-        routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
-        Ers
-      </a>
-      <a [routerLink]=" ['./cesa'] "
-        routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
-        Cesa
-      </a>
-      <a [routerLink]=" ['./about'] "
-        routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
-        About
-      </a>
-    </nav>
-
     <header class="header-wrapper">
         <div class="navigation-wrapper">
             <div class="container">
@@ -82,7 +59,7 @@ import { AppState } from './app.service';
                             <h1>
                                 <a class="hidden-xs" id="ma-logo"
                                    [routerLink]=" ['./'] ">
-                                    <img [src]="maLogo" alt="ma-logo" style="width:150px; height:150px;margin-top:-50px;padding-right:10px;">
+                                    <img [src]="maLogo" alt="ma-logo" style="width:90px;">
                                 </a>
                             </h1>
                         </div>
@@ -152,8 +129,6 @@ import { AppState } from './app.service';
     <main>
       <router-outlet></router-outlet>
     </main>
-
-    <pre class="app-state">this.appState.state = {{ appState.state | json }}</pre>
 
     <!-- Footer Section -->
     <footer class="footer-wrapper">

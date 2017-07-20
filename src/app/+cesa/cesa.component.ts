@@ -13,12 +13,6 @@ console.log('`Cesa` component loaded asynchronously');
 @Component({
   selector: 'cesa',
   template: `
-    <span>
-      <a [routerLink]=" ['./child-cesa'] ">
-        Child Cesa
-      </a>
-    </span>
-
     <div class="text-center quaternary-nav hidden-xs">
         <div class="container">
             <div class="p-t-b-15 bdr-btm-e0e0e0 position-relative">
@@ -49,16 +43,14 @@ console.log('`Cesa` component loaded asynchronously');
         <section id="content">
             <div class="content-wrapper">
                 <div class="product-wrapper gray-bg m-t-minus50">
-                    <div class="common-container p-t-60 text-center">
-                        <figure class="circle-bg">
-                            <img [src]="stackIcon" class="img-responsive" alt="" />
-                        </figure>
-                        <h2 class="small-header m-t-20">Content, Economics & Structured Analytics Division</h2>
-
-                        <div class="intro-paragraph m-t-20">
-                            <p>
-                                Reliable delivery of our top in class economic research and valuations to serve the evolving finance industry
-                            </p>
+                    <div class="try-banner">
+                        <div class="container">
+                            <h2>Content, Economics & Structured Analytics Division</h2>
+                            <div class="intro-paragraph">
+                                <p>
+                                    Reliable delivery of our top in class economic research and valuations to serve the evolving finance industry
+                                </p>
+                            </div>
                         </div>
                     </div>
 
@@ -150,6 +142,7 @@ console.log('`Cesa` component loaded asynchronously');
                                                     </p>
                                                 </div>
                                                 <div class="button-wrap m-t-20">
+                                                    <a [routerLink]="['./child-cesa']" class="btn btn-primary m-r-20  m-b-15 btn-sm">Participants' Experiences</a>
                                                     <a [href]="capitalStructureUrl" class="btn btn-primary m-r-20  m-b-15 btn-sm">Check It Out!</a>
                                                 </div>
                                             </div>
@@ -189,19 +182,6 @@ console.log('`Cesa` component loaded asynchronously');
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <div class="try-banner">
-                <div class="container">
-                    <h1 class="large-header">Keep in Touch!</h1>
-                    <div class="intro-paragraph">
-                        <p>
-                            The best engineers are the one's who stay curious
-                        </p>
-                    </div>
-
-                    <a href="/start" class="btn btn-yellow m-t-30">Chat</a>
                 </div>
             </div>
       </section>
