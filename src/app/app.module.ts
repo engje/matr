@@ -14,6 +14,7 @@ import {
   RouterModule,
   PreloadAllModules
 } from '@angular/router';
+import {Ng2PageScrollModule} from 'ng2-page-scroll';
 
 /*
  * Platform and Environment providers/directives/pipes
@@ -63,7 +64,8 @@ type StoreType = {
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules })
+    RouterModule.forRoot(ROUTES),
+    Ng2PageScrollModule.forRoot()
   ],
   /**
    * Expose our Services and Providers into Angular's dependency injection.

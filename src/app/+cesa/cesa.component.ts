@@ -18,17 +18,17 @@ console.log('`Cesa` component loaded asynchronously');
             <div class="p-t-b-15 bdr-btm-e0e0e0 position-relative">
                 <ul class="list-inline nav-group nav-list">
                     <li>
-                        <a class="text-center product-icon" [routerLink]="['./']" fragment="anchorcreditedge">
+                        <a class="text-center product-icon zoomtab" pageScroll href="#anchorcreditedge">
                             <span class="icon elasticsearch-6"></span> CreditEdge
                         </a>
                     </li>
                     <li>
-                        <a class="text-center product-icon" [routerLink]="['./']" fragment="sav">
+                        <a class="text-center product-icon zoomtab" [routerLink]="['./']" fragment="sav">
                             <span class="icon elasticsearch-4"></span> SAV
                         </a>
                     </li>
                     <li>
-                        <a class="text-center product-icon" [routerLink]="['./']" fragment="cv2">
+                        <a class="text-center product-icon zoomtab" [routerLink]="['./']" fragment="cv2">
                             <span class="icon elasticsearch-6"></span> CreditView 2
                         </a>
                     </li>

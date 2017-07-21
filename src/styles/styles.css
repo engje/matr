@@ -1,0 +1,6 @@
+.zoomtab {
+    transition: all .2s ease;
+}
+.zoomtab:hover {
+    -webkit-transform: scale(1.2);
+}
